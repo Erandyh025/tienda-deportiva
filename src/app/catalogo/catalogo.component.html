@@ -1,1 +1,17 @@
-<p>catalogo works!</p>
+<br>
+<br>
+<div  class="container-sm offset-md-5">
+    <h3>Productos populares</h3>
+</div>
+
+<div class="container-sm">
+    <div class="row">
+        <div class="card col-6 col-md-2 offset-md-1" *ngFor="let producto of producto">
+            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img class="img-fluid" src="assets/img/1.png">
+            </div>
+            <div class="card-body" >
+              <h5 class="card-title">{{producto.name}}</h5>
+              <a href="#!" class="btn btn-primary">Añadir </a>
+            </div>
+          </div>
