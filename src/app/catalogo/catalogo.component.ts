@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ConexionService } from '../Services/conexion.service';
+
 
 @Component({
   selector: 'app-catalogo',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CatalogoComponent implements OnInit {
 
-  constructor() { }
+  producto:any;
+  constructor(private productosService: ConexionService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.productosService.getProductos().subscribe( res => {
+      this.producto = res;
+    });
   }
-
 }
