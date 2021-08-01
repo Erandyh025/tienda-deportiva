@@ -8,13 +8,15 @@ import { InicioComponent } from './inicio/inicio.component';
 import { CatalogoComponent } from './catalogo/catalogo.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { InfoComponent } from './info/info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     InicioComponent,
-    CatalogoComponent
+    CatalogoComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
