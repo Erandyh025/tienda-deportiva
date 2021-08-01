@@ -9,6 +9,7 @@ import { CatalogoComponent } from './catalogo/catalogo.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { InfoComponent } from './info/info.component';
+import { ContactoComponent } from './contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { InfoComponent } from './info/info.component';
     NavbarComponent,
     InicioComponent,
     CatalogoComponent,
-    InfoComponent
+    InfoComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
